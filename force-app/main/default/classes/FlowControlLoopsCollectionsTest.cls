@@ -214,10 +214,10 @@ public with sharing class FlowControlLoopsCollectionsTest {
     static void testAddItemsToMap() {
         Map<String, Integer> result = FlowControlLoopsCollections.addItemsToMap();
 
-        // Verify the map size
+        Verify the map size
         Assert.areEqual(5, result.size(), 'Incorrect map size');
 
-        // Verify the key-value pairs
+        Verify the key-value pairs
         Assert.areEqual(5, result.get('Apples'), 'Incorrect quantity for Apples');
         Assert.areEqual(10, result.get('Oranges'), 'Incorrect quantity for Oranges');
         Assert.areEqual(15, result.get('Bananas'), 'Incorrect quantity for Bananas');
@@ -249,4 +249,4 @@ public with sharing class FlowControlLoopsCollectionsTest {
         Assert.areEqual(new List<String>{'Jane Smith', 'Alice Johnson'}, result, 'Incorrect high paid employees');
     }
 
-}
+ }
